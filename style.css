@@ -1,11 +1,23 @@
+/* FONT LINK  */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    height: 100vh;
+}
 .main-btn{
     background-color: #F55951;
+}
+
+header{
+    background-color: #ffffff;
+    z-index: 1;
 }
 #logo{
     width: 4rem;
@@ -16,12 +28,50 @@
     border-left: 1.5px solid rgb(205, 202, 202);
 }
 header li > a{
-    color: rgb(139, 138, 138) !important;
-    font-weight: 600 !important;
+    /* color: rgb(139, 138, 138) !important; */
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: 500 !important;
 }
-
+#home h1, #services h4{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#home p {
+    color: rgba(0, 0, 0, 0.5);
+}
+.home-img img{
+    width: 100%;
+}
+.home-btn{
+    /* border: 2px solid rgba(0, 0, 0, 0.5); */
+    border: 1px solid rgba(172, 172, 172, 0.5);
+}
+#card2{
+    /* border: 2px solid linear-gradient(to right top, #c9c6c6, #cbc7c7, #cdc8c8, #cfc9c9, #d1caca); */
+    /* border: 2px solid #e1e1e1; */
+    box-shadow: 3px solid #3f3f3f
+}
+#services .card-flush:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+}
 @media screen and (max-width:998px) {
     .navbar-collapse{
         border-left: none;
+    }
+    /* HOME  */
+    .btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .btns .home-btn{
+        margin-top: 0.5rem;
+    }
+    #services .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
