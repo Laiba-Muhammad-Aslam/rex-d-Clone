@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main-btn{
+    background-color: #F55951;
+}
+#logo{
+    width: 4rem;
+    height: 2rem;
+}
+.navbar-collapse{
+    /* border-right: 1.5px solid grey; */
+    border-left: 1.5px solid rgb(205, 202, 202);
+}
+header li > a{
+    color: rgb(139, 138, 138) !important;
+    font-weight: 600 !important;
+}
+
+@media screen and (max-width:998px) {
+    .navbar-collapse{
+        border-left: none;
+    }
+}
