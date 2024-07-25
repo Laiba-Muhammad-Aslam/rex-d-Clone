@@ -32,7 +32,7 @@ header li > a{
     color: rgba(0, 0, 0, 0.5) !important;
     font-weight: 500 !important;
 }
-#home h1, #services h4{
+#home h1, #services h4, #contactUs h1{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -56,6 +56,31 @@ header li > a{
     background-color: #ffffff;
     cursor: pointer;
 }
+.contactImg img{
+    width: 100%;
+}
+#chaticon{
+    color: #c31432;
+    color: -webkit-linear-gradient(to right, #240b36, #c31432);
+    color: linear-gradient(to right, #240b36, #c31432);
+
+    background: #d2818f; 
+    background: -webkit-linear-gradient(to right, #240b36, #c97885);  
+    background: linear-gradient(to right, #240b36, #a86973);
+}
+#contactUs button{
+    background: #c31432; 
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  
+    background: linear-gradient(to right, #240b36, #c31432);
+
+}
+#contactUs input, #contactUs textarea{
+    background-color: #ECECEC;
+}
+#contactUs form{
+    width: 100%;
+}
+
 @media screen and (max-width:998px) {
     .navbar-collapse{
         border-left: none;
@@ -73,5 +98,11 @@ header li > a{
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+}
+@media screen and (max-width:768px){
+    #contactUs .row{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
