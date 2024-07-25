@@ -32,7 +32,7 @@ header li > a{
     color: rgba(0, 0, 0, 0.5) !important;
     font-weight: 500 !important;
 }
-#home h1, #services h4, #contactUs h1{
+#home h1, #services h4, #contactUs h1, #growth h1, #growth .row p, footer ul > li:first-child{
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -79,6 +79,15 @@ header li > a{
 }
 #contactUs form{
     width: 100%;
+}
+
+/* FOOTER SECTION  */
+
+footer img{
+    width: 10rem;
+}
+footer ul li{
+    list-style-type: none;
 }
 
 @media screen and (max-width:998px) {
